@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohli company</title>
+  <!--CDN of Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    crossorigin="anonymous" />
+  <!--swiper cdn-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--style sheet-->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- <a id="title" href="">Kohli</a> -->
+    <img id="title" src="Kohli.png">
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <a href="home.html" id="home1">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <!--header section end-->
+  <section class="home" id="home">
+    <div class="content">
+      <h1>Next Generation Of Creativity</h1>
+      <p>Our main focus is on innovation </p>
+    </div>
+  <!-- /*section swiper*/ -->
+
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img7.jpg" />
+        </div><div class="swiper-slide">
+          <img src="img8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img4.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!--section ends here-->
+  <article>
+    <div class="box"></div>
+    <div></div>
+  </article>
+<!--footer section-->
+  <section class="footer">
+    <div class="share">
+        <a href="https://www.facebook.com/KohliCompany" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/KohliCompany" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/KohliCompany/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/kohlicompany/" class="fab fa-linkedin"></a>
+        <a href="https://www.youtube.com/KohliStudio" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-skype"></a>
+      </div>
+
+    <div class="credit">
+      <span class="mwl">#MadeWithLove</span> 
+      <span  class="ks">&hearts; <a href="http://www.kohli.studio/">Kohli.Studio</span></a></div>
+    
+</section>
+<!-- footer section ends -->
+
+
+  <!--script cdn for swiper-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- javascript code -->
+  <script>
+    /*for  Header*/
+    let menu = document.querySelector("#menu-bar");
+    let navbar = document.querySelector(".navbar");
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('nav-toggle');
+    });
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('nav-toggle');
+    }
+    /*section swiper*/
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop:true,
+      autoplay:{
+        delay:500,
+        disableOnInteraction:false,
+      },
+    });
+
+  </script>
+
+</body>
+
+</html>

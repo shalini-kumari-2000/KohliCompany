@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohli company</title>
+  <!--CDN of Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    crossorigin="anonymous" />
+  <!--swiper cdn-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--style sheet-->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- <a id="title" href="">Kohli</a> -->
+    <img id="title" src="Kohli.png">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html" id="about1">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <div class="box3">
+    </div>
+  </section>
+  <!--header section end-->
+  <section id="about">
+    <div>
+      
+        <div class="box2">
+          <h1>About</h1>
+          <div>
+            <h2>Kohli Company</h2>
+            <p>Kohli Company founded in 2006 is a group of businesses, that develop innovative Web-Products serving
+              people worldwide.</p>
+            <h2>Kohli Media LLP</h2>
+            <p>Kohli Media LLP was incorporated on 1st of January'18</p>
+          </div>
+          <div>
+            <h2>Letter from the MP(Managing Partner)</h2>
+            <p><span>Dear Guest,</span>
+              I am Rakesh Kohli, Managing Partner at Kohli Media LLP. The vision behind our various businesses is to
+              build technology that leverages on opportunities that a connected globe has to offer. We build mass-market
+              web products and services, that are used by users worldwide. Our Products & Businesses share a common goal
+              of empowering you with tools that allow you to capitalize on the advantages of a networked world.
+            </p>
+            <p>Our Innovative Products and Services enable individuals and entities to improve communication and
+              collaboration and increase efficiency. From basic building blocks, to complex solutions tailored for
+              specific industry verticals, we have the perfect mix of services for e-enabling and enhancing, both your
+              Personal and Business lives.</p>
+            <p>
+              We have a great Team of people churning out some of the coolest technology in the world, here at Kohli.
+              Our people are passionate about their daily jobs, because they can see that their contribution makes a
+              difference in the world. Our Businesses are the fastest growing worldwide in their respective spaces, and
+              have all been profitable from inception and growing rapidly.</p>
+            <p>
+              Despite our exponential growth in terms of clientele, people, and revenue, our unique work culture allows
+              us to retain the advantages of a small company. Decisions are taken quickly. We are nimble and responsive
+              to change.</p>
+            <p>
+              I welcome you to explore our services. If you are seriously considering the Internet, you should be
+              seriously considering us.</p>
+            <p>
+              Sincerely Yours,
+            </p>
+            <p>
+              Rakesh Kohli
+            </p>
+            <p>Managing Partner</p>
+            <p>Kohli Media LLP</p>
+            <p style="color: rgb(247, 246, 250); font: weight 700px;;letter-spacing:1px; font-size: 20px;">P.S. - Feel free to write to me at rakesh.kohli [at] kohli.tel regarding anything.</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+
+  <!--footer section-->
+  <section class="footer">
+    <div class="share">
+      <a href="https://www.facebook.com/KohliCompany" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/KohliCompany" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/KohliCompany/" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/company/kohlicompany/" class="fab fa-linkedin"></a>
+      <a href="https://www.youtube.com/KohliStudio" class="fab fa-youtube"></a>
+      <a href="#" class="fab fa-skype"></a>
+    </div>
+  <div class="credit">
+  <span class="mwl">#MadeWithLove</span> 
+  <span  class="ks">&hearts; <a href="http://www.kohli.studio/">Kohli.Studio</span></a></div>
+
+  </section>
+  <!-- footer section ends -->
+
+  <!-- javascript code -->
+  <script>
+    /*for  Header*/
+    let menu = document.querySelector("#menu-bar");
+    let navbar = document.querySelector(".navbar");
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('nav-toggle');
+    });
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('nav-toggle');
+    }
+
+  </script>
+
+</body>
+
+</html>
